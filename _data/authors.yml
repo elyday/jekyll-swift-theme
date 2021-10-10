@@ -1,0 +1,7 @@
+example:
+  name: Max Mustermann
+  bio: Foo bar
+  pic: /assets/images/avatar.png
+  website: https://elyday.net
+  twitter: whitehouse
+  github: onweru

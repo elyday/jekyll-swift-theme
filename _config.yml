@@ -1,0 +1,22 @@
+title: Your awesome title
+description: Some example description
+
+pagination:
+  enabled: true
+  per_page: 10
+  title: ''
+  permalink: '/page/:num/'
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
+permalink: '/:year/:month/:title:output_ext'
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+
+theme: jekyll-swift-theme

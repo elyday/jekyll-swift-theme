@@ -1,0 +1,10 @@
+<div class="nav-drop">
+  <div class="nav-body">
+    {% for item in site.data.nav %}
+      <a href="{{ item.path | relative_url}}" class="nav-item">{{ item.title | escape }}</a>
+    {%- endfor -%}
+
+    <div class="nav-close"></div>
+  </div>
+</div>
+{%- include header.html -%}

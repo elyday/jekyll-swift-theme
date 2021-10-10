@@ -1,0 +1,16 @@
+<!-- intro banner on list pages -->
+<div class='intro'>
+    <div class='intro_inner'>
+        <div>
+            <div class='waves'>
+                <canvas id='waves' class='waves_inner'></canvas>
+            </div>
+            <script src='{{ "/assets/js/sine-waves.min.js" | relative_url }}'></script>
+            <script src='{{ "/assets/js/audio.js" | relative_url }}'></script>
+        </div>
+        <section>
+            <h1 class='intro_headline'>{{ site.title }}</h1>
+            <p class='intro_desc'>{{ site.description }}</p>
+        </section>
+    </div>
+</div>

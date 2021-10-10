@@ -1,0 +1,28 @@
+{% assign author = site.data.authors[page.author] %}
+
+{% if author %}
+    <div class="author">
+        <a href="{{ author.website }}" title="{{ author.name }}'s profile" class="author_pic">
+            <img src="{{ author.pic }}" alt="">
+        </a>
+
+        <div class="author_meta">
+            <a class="author_name" href="{{ author.website }}">{{ author.name }}</a>
+            <p class="pale author_bio solo">{{ author.bio }}</p>
+
+            <ul class="social-list">
+                {% if author.twitter %}
+                <li>
+                    <a href="https://twitter.com/{{ author.twitter }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/images/icons/social-icons.svg#twitter' | relative_url }}"></use></svg> <span class="username">@{{ author.twitter }}</span></a>
+                </li>
+                {% endif %}
+
+                {% if author.github %}
+                <li>
+                    <a href="https://github.com/{{ author.github }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/images/icons/social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">@{{ author.github }}</span></a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+{% endif %}

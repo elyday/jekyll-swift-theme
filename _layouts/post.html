@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% if page.image %}
+{% assign bg = "/assets/images/" | append: page.image | relative_url %}
+{% else %}
+{% assign bg = "/assets/images/thumbnail.svg" | relative_url %}
+{% endif %}
+
+<section class="post_header" style="background-image:url({{ bg }});">
+  <h1 class="post_title">{{ page.title | escape }}</h1>
+</section>
+
+<div class="post">
+  <article class="post_content">
+    {{ content }}
+    {% include author.html %}
+  </article>
+
+  <aside>
+    {% include related.html %}
+  </aside>
+</div>
+
+<script src='{{ "/assets/js/autosize.min.js" | relative_url}}'></script>
+<script src='{{ "/assets/js/timeago.js" | relative_url}}'></script>
