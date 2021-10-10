@@ -20,6 +20,7 @@ This Theme is a port of [Hugo Swift Theme](https://github.com/onweru/hugo-swift-
 * Syntax Highlighting
 * Gallery & Video Support
 * Staticman
+* Tag Sites
 
 ## Installation
 
