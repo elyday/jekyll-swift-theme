@@ -1,11 +1,25 @@
-# jekyll-swift-theme
+# Jekyll Swift Theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+This theme is designed for blogging purposes. Feel free to extend it for other use cases though.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+At its core, it's minimalistic; it doesn't rely on monolithic libraries such e.g jquery, bootstrap. Instead, it uses grid css, flexbox & vanilla js to facilitate the `features` outlined below:
 
-TODO: Delete this and the text above, and describe your gem
+This Theme is a port of [Hugo Swift Theme](https://github.com/onweru/hugo-swift-theme) for Jekyll. Original credit for this theme goes to [weru](https://github.com/onweru).
 
+![Jekyll Swift Theme](https://github.com/elyday/jekyll-swift-theme/blob/main/screenshot.png)
+
+## Features
+
+* Blog
+* Pagination
+* Dark Mode
+* Native lazy loading of images
+
+### TODO
+
+* Syntax Highlighting
+* Gallery & Video Support
+* Staticman
 
 ## Installation
 
@@ -29,13 +43,62 @@ Or install it yourself as:
 
     $ gem install jekyll-swift-theme
 
-## Usage
+## Configuration
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+You need to configure the following settings in your `_config.yml`:
+
+```yaml
+title: Your awesome title
+description: Some example description
+
+pagination:
+  enabled: true
+  per_page: 10
+  title: ''
+  permalink: '/page/:num/'
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
+permalink: '/:year/:month/:title:output_ext'
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+
+theme: jekyll-swift-theme
+```
+
+### Authors (written by block)
+
+An author block can be automatically included in every post. To do this, only the following line must be inserted in the upper block of a post:
+
+```yaml
+author: foo
+```
+
+You can configure the author information in the file `_data/authors.yaml`. An entry for an author should be like:
+
+```yaml
+example:
+  name: Max Mustermann
+  bio: Foo bar
+  pic: /assets/images/avatar.png
+  website: https://elyday.net
+  twitter: whitehouse
+  github: onweru
+```
+
+### Navigation Bar
+
+You can configure the navigation bar entries in the file `_data/nav.yaml`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/elyday/jekyll-swift-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
@@ -49,4 +112,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `jekyll-s
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
