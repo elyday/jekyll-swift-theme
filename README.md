@@ -1,4 +1,7 @@
-# Jekyll Swift Theme
+![jekyll-swift-theme](https://socialify.git.ci/elyday/jekyll-swift-theme/image?description=1&forks=1&language=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
+
+![](https://ruby-gem-downloads-badge.herokuapp.com/jekyll-swift-theme?type=total&metric=true)
+[![Gem Version](https://badge.fury.io/rb/jekyll-swift-theme.svg)](https://badge.fury.io/rb/jekyll-swift-theme)
 
 This theme is designed for blogging purposes. Feel free to extend it for other use cases though.
 
@@ -14,13 +17,49 @@ This Theme is a port of [Hugo Swift Theme](https://github.com/onweru/hugo-swift-
 * Pagination
 * Dark Mode
 * Native lazy loading of images
+* Picture & Gallery Support
+* YouTube Video Support
 
 ### TODO
 
 * Syntax Highlighting
-* Gallery & Video Support
 * Staticman
 * Tag Sites
+
+### Pictures
+
+You can include pictures very simple. You want to use darkmode images when darkmode is enabled on a device and a regular image on lightmode? It takes 3 include parameters
+
+```ruby
+{% include shorts/picture.html normalPath="images/read.jpg" darkPath="images/speakers.jpg" alt="reading" %}
+```
+
+### Gallery
+
+You can include a gallery in your article. For this you need first to define the gallery with its images in the file `_data/gallery.yml`.
+
+```yaml
+example:
+  - image: fast-lane.jpg
+    description: a fast lane
+  
+  - image: stuck.jpg
+    description: a stuck bike
+```
+
+Then you can include the gallery with the used key.
+
+```ruby
+{% include shorts/gallery.html name="example" %}
+```
+
+### YouTube Video Support
+
+You can include a youtube video very simple.
+
+```ruby
+{% include shorts/youtube.html videoId="mgiWeQI0_nM" %
+```
 
 ## Installation
 
