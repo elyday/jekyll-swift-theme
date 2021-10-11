@@ -1,4 +1,6 @@
-# Jekyll Swift Theme
+![jekyll-swift-theme](https://socialify.git.ci/elyday/jekyll-swift-theme/image?description=1&forks=1&language=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
+
+![](https://ruby-gem-downloads-badge.herokuapp.com/jekyll-swift-theme?type=total&metric=true)
 
 This theme is designed for blogging purposes. Feel free to extend it for other use cases though.
 
