@@ -1,0 +1,9 @@
+{% assign gallery = site.data.gallery[include.name] %}
+
+<div class="gallery">
+    {% for item in gallery %}
+        <figure class="gallery_item">
+            <img src="{{ '/assets/images/' | append: item.image | relativePath }}" class="gallery_image" alt="{{ item.description }}" />
+        </figure>
+    {% endfor %}
+</div>
