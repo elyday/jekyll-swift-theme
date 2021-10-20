@@ -1,3 +1,11 @@
+# 0.3.1
+
+Changed:
+* Link Width of the nav brand
+
+Removed:
+* Non Dark Mode
+
 # 0.3.0
 
 Added:

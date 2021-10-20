@@ -1,11 +1,5 @@
 {% assign image = "/assets/images/" | append: include.normalPath %}
-{% assign darkImage = "/assets/images/" | append: include.normalPath %}
-
-{% if include.darkPath %}
-    {% assign darkImage = "/assets/images/" | append: include.darkPath %}
-{% endif %}
 
 <picture class="nav-logo">
-    <source srcset="{{ darkImage | relativePath }}" media="(prefers-color-scheme: dark)">
     <img srcset="{{ image | relativePath }}" alt="{{ include.alt }}">
 </picture>

@@ -15,7 +15,7 @@ This Theme is a port of [Hugo Swift Theme](https://github.com/onweru/hugo-swift-
 
 * Blog
 * Pagination
-* Dark Mode
+* Dark Mode only
 * Native lazy loading of images
 * Picture & [Gallery](https://galleriajs.github.io) Support
 * Flickr Album Support
@@ -29,10 +29,10 @@ This Theme is a port of [Hugo Swift Theme](https://github.com/onweru/hugo-swift-
 
 ### Pictures
 
-You can include pictures very simple. You want to use darkmode images when darkmode is enabled on a device and a regular image on lightmode? It takes 3 include parameters
+You can include pictures very simple.
 
 ```ruby
-{% include shorts/picture.html normalPath="images/read.jpg" darkPath="images/speakers.jpg" alt="reading" %}
+{% include shorts/picture.html normalPath="images/read.jpg" alt="reading" %}
 ```
 
 ### Gallery
