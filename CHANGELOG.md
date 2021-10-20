@@ -1,3 +1,8 @@
+# 0.3.1
+
+Removed:
+* Non Dark Mode
+
 # 0.3.0
 
 Added:
