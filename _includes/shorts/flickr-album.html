@@ -1,0 +1,10 @@
+<div class="galleria galleria-{{ include.albumId }}"></div>
+
+<script type="text/javascript">
+    $('.galleria-{{ include.albumId }}').galleria({
+        flickr: 'set:{{ include.albumId }}',
+        flickrOptions: {
+            thumbSize: 'medium'
+        }
+    });
+</script>

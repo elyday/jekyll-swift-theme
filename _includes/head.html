@@ -9,8 +9,13 @@
   <link rel='icon' type='image/png' sizes='16x16' href='{{ "/assets/images/icons/favicon-16x16.png" | relative_url }}'>
   <link rel='manifest' href='{{ "/assets/images/icons/site.webmanifest" | relative_url }}'>
 
-
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/galleria/themes/folio/galleria.folio.css" | relative_url }}">
   {%- feed_meta -%}
+
+  <script src="{{ "/assets/js/jquery-3.6.0.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/galleria/galleria.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/galleria/plugins/flickr/galleria.flickr.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/galleria/themes/folio/galleria.folio.min.js" | relative_url }}"></script>
 </head>

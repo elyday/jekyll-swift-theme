@@ -17,7 +17,8 @@ This Theme is a port of [Hugo Swift Theme](https://github.com/onweru/hugo-swift-
 * Pagination
 * Dark Mode
 * Native lazy loading of images
-* Picture & Gallery Support
+* Picture & [Gallery](https://galleriajs.github.io) Support
+* Flickr Album Support
 * YouTube Video Support
 
 ### TODO
@@ -51,6 +52,14 @@ Then you can include the gallery with the used key.
 
 ```ruby
 {% include shorts/gallery.html name="example" %}
+```
+
+### Flickr Album
+
+You can include a flickr album in your article. For this you need to include `flickr.album.html` with the flickr id of the album.
+
+```ruby
+{% include shorts/flickr-album.html albumId="72157711928042766" %}
 ```
 
 ### YouTube Video Support
