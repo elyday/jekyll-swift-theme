@@ -1,9 +1,11 @@
 {% assign gallery = site.data.gallery[include.name] %}
 
-<div class="gallery">
+<div class="galleria galleria-{{ include.name }}">
     {% for item in gallery %}
-        <figure class="gallery_item">
-            <img src="{{ '/assets/images/' | append: item.image | relativePath }}" class="gallery_image" alt="{{ item.description }}" />
-        </figure>
+    <img src="{{ '/assets/images/' | append: item.image | relativePath }}" data-description="{{ item.description }}" />
     {% endfor %}
 </div>
+
+<script type="text/javascript">
+    $('.galleria-{{ include.name }}').galleria();
+</script>
