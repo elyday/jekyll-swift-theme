@@ -1,3 +1,8 @@
+# 0.3.2
+
+Changed:
+* Changed post image paths
+
 # 0.3.1
 
 Changed:

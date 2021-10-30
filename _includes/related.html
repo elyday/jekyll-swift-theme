@@ -3,7 +3,7 @@
 <ul class="posts aside">
     {% for related in site.related_posts limit:2 %}
         {% if related.image %}
-            {% assign related_bg = "/assets/images/" | append: related.image | relative_url %}
+            {% assign related_bg = "" | append: related.image | relative_url %}
         {% else %}
             {% assign related_bg = "/assets/images/thumbnail.svg" | relative_url %}
         {% endif %}

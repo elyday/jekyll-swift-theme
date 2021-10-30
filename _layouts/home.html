@@ -8,7 +8,7 @@ layout: default
   <ul class="posts wrap" id="posts">
     {% for post in paginator.posts %}
       {% if post.image %}
-      {% assign bg = "/assets/images/" | append: post.image | relative_url %}
+      {% assign bg = "" | append: post.image | relative_url %}
       {% else %}
       {% assign bg = "/assets/images/thumbnail.svg" | relative_url %}
       {% endif %}
