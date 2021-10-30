@@ -2,7 +2,7 @@
 layout: post
 author: example
 date: 2021-10-10T20:00:00Z
-image: "speakers.jpg"
+image: "/assets/images/speakers.jpg"
 tags: Welcome Jekyll
 title: "Welcome to Jekyll"
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-image: 'read.jpg'
+image: '/assets/images/read.jpg'
 ---
 
 This is a jekyll theme.
